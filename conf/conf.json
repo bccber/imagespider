@@ -1,0 +1,21 @@
+{
+    "mysqlConn": "root:123456@tcp(127.0.0.1:3306)/imagespider_db?charset=utf8&loc=Asia%2FShanghai&parseTime=true",
+    "savePath": "D:/soft/Go/pro/src/github.com/bccber/imageshow/static/images/",
+    "spider": [
+        {
+            "name": "sina",
+            "enabled": true,
+            "maxGoroutine": 10,
+            "maxPage": 100,
+            "url": "https://interface.sina.cn/tech/gif/album.d.json?format=json&num=120&page=%d"
+
+        },
+        {
+            "name": "qiushibaike",
+            "enabled": true,
+            "maxGoroutine": 10,
+            "maxPage": 100,
+            "url": "https://www.qiushibaike.com/imgrank/page/%d/"
+        }
+    ]
+}
